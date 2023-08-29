@@ -7,9 +7,17 @@ Il software stampa il maggiore.*/
 
 //Chiedo il primo numero all'utente
 const firstUserNumber = prompt ('Scegli un numero');
-console.log (firstUserNumber);
+
 
 //Chiedo un secondo numero all'utente
 const secondUserNumber = prompt ('Scegli ancora un numero diverso dal primo');
-console.log (secondUserNumber);
+
+//Dichiaro e stampo sia in console che in pagina solo il numero maggiore 
+if (firstUserNumber > secondUserNumber) {
+    console.log(firstUserNumber)
+    document.getElementById ('result').innerHTML = ' Il numero vincente è ' + firstUserNumber
+} else if (firstUserNumber < secondUserNumber) {
+    console.log(secondUserNumber)
+    document.getElementById ('result').innerHTML = ' Il numero vincente è ' + secondUserNumber
+}
 
