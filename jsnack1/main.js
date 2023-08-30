@@ -27,11 +27,22 @@ L’utente inserisce due numeri in successione, con due prompt.
 Il software stampa il maggiore.*/
 
 let x=1
+let list = []
 while (x <= 2) {
-    const number = prompt ('scegli un numero') 
+    let number = prompt ('scegli un numero') 
+    number = parseInt(number)
+    list.push(number)
     x++
-    
 }
+console.log(list)
+if (list[0] > list[1]) {
+    console.log(list[0])
+} else if (list[0] < list[1]) {
+    console.log(list[1])
+}
+
+
+
 
 
 
