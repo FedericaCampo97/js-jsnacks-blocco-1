@@ -27,7 +27,7 @@ while (x <= 2) {
 }
 console.log(list)
 if (list[0] > list[1]) {
-    console.log(list[0] + list[1])
-} else if (list[0] < list[1]) {
     console.log(list[1] + list[0])
+} else if (list[0] < list[1]) {
+    console.log(list[0] + list[1])
 }
